@@ -1,0 +1,10 @@
+Recitation model for Mukth (hifz mode, optional download)
+
+Adapted from NVIDIA FastConformer-Hybrid PCD Large (ar), stt_ar_fastconformer_hybrid_large_pcd_v1.0, by NVIDIA,
+https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
+Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+Changes: only the encoder and the CTC head are used; exported to ONNX with NVIDIA NeMo and the weights of the
+MatMul/Gemm/Conv layers quantised to int8 (ONNX Runtime dynamic quantisation). vocab.txt = the model's
+SentencePiece pieces in order. No warranty.
+
